@@ -91,15 +91,6 @@ with col6:
 with col7:
     avg_mins = st.number_input('Average_minutes',min_value=0.000,step=0.001)
 
-col8,col9,col10 = st.columns(3)
-
-with col5:
-    year = st.number_input('year',min_value=2018,step=1)
-with col6:
-    month = st.number_input('month',min_value=1,step=1)
-with col7:
-    day = st.number_input('day',min_value=1,step=1)
-
 
 if st.button('Predict Score'):
     df = pd.DataFrame({f'player_{name}': [0] for name in player})
@@ -108,19 +99,20 @@ if st.button('Predict Score'):
     df1 = pd.DataFrame({f'ground_{name}': [0] for name in ground})
     df = pd.concat([df, df1], axis=1)
     str1 = f'player_{player}'
+
     df[str1]=1
+    st.header(str1)
     str1 = f'opposition_{opposition}'
+    st.header(str1)
     df[str1]=1
     str1 = f'ground_{ground}'
+    st.header(str1)
     df[str1]=1
     df['avg_4s']=avg_4s
     df['avg_6s']=avg_6s
     df['avg_bf']=avg_bf
     df['avg_sr']=avg_sr
     df['avg_mins']=avg_mins
-    df['year']=year
-    df['month']=month
-    df['day']=day
     result = pipe.predict(df)
     st.header("Predicted Runs - " + str(int(result[0])))
 
