@@ -98,15 +98,11 @@ if st.button('Predict Score'):
     df = pd.concat([df, df1], axis=1)
     df1 = pd.DataFrame({f'ground_{name}': [0] for name in ground})
     df = pd.concat([df, df1], axis=1)
-    str1 = f'player_{player}'
-
+    str1 = f'player_{Player}'
     df[str1]=1
+    str1 = f'opposition_{Opposition}'
     st.header(str1)
-    str1 = f'opposition_{opposition}'
-    st.header(str1)
-    df[str1]=1
-    str1 = f'ground_{ground}'
-    st.header(str1)
+    str1 = f'ground_{Ground}'
     df[str1]=1
     df['avg_4s']=avg_4s
     df['avg_6s']=avg_6s
