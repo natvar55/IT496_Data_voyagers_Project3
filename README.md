@@ -3,11 +3,11 @@
 # 🚀 Data Voyagers
 
 
-## 1. 🎯 Introduction
+## 🎯 Introduction
 
 In this project, we have done three tasks related to ICC Cricket World Cup 2023. 
 
-## 2. ✨ Task1_1 Maximum runs scorer(Batsman)
+##  ✨ Task1_1 Maximum runs scorer(Batsman)
 
 - **Dataset Information:-**<br>
   We have scraped the data of batsman's performance in each ODI match from the ESPN website. We merged 150 batsman html files and created the dataset Batsman_matches.csv
