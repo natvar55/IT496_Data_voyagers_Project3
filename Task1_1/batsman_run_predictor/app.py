@@ -2,8 +2,6 @@ import streamlit as st
 import pickle
 import pandas as pd
 import numpy as np
-import xgboost
-from xgboost import XGBRegressor
 
 pipe = pickle.load(open('model.pkl','rb'))
 player=['Hashmatullah Shahidi' 'Rashid Khan' 'Abdul Rahman' 'Fazalhaq Farooqi'
