@@ -73,13 +73,13 @@ with col7:
 
 if st.button('Predict Score'):
     df = pd.DataFrame({f'player_{name}': [0] for name in player})
-    df = pd.DataFrame({f'opposition_{name}': [0] for name in opposition})
-    df = pd.DataFrame({f'ground_{name}': [0] for name in ground})
-    str1='player_'+player
+    df1 = pd.DataFrame({f'opposition_{name}': [0] for name in opposition})
+    df1 = pd.DataFrame({f'ground_{name}': [0] for name in ground})
+    str1='player_'+[player]
     df[str1]=1
-    str1='opposition_'+opposition
+    str1='opposition_'+[opposition]
     df[str1]=1
-    str1='ground_'+ground
+    str1='ground_'+[ground]
     df[str1]=1
     df['avg_4s']=avg_4s
     df['avg_6s']=avg_6s
