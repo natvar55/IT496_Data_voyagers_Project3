@@ -17,8 +17,8 @@ In this project, we have done three tasks related to ICC Cricket World Cup 2023.
   As player, ground and opposition were categorical and nominal features we used one hot encoding to preprocess them.
   For rest of the numerical columns, we used the standard scaling method.
 
-- **Predictive Goals**
-  For a given match we predicted the runs that a player is likely to score.
+- **Predictive Goals:-**
+  For a given match we predicted the runs that a player is likely to score.<br>
   We predicted which player is most likely to be the highest run scorer.
 - **Models**
   Xgboost Regressor-> R2-score- 74.16%
