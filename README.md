@@ -25,7 +25,8 @@ In this project, we have done three tasks related to ICC Cricket World Cup 2023.
   Random Forest -> R2-score - 70.67%<br>
   LightBgm -> R2-score - 52.08%<br>
   DNN(Deep Neural Network) in Keras -> R2-score - 82.17%
-  
+- **API:-**
+- https://it496datavoyagersproject3-nw9kvpejcr6mvfalqln58d.streamlit.app/
   
 ## ✨ Task1_2
 
@@ -43,7 +44,9 @@ In this project, we have done three tasks related to ICC Cricket World Cup 2023.
 - **Models:-** <br>
   Xgboost Regressor-> R2-score- 95.8% <br>
   Random Forest -> R2-score - 70.8%
-
+  
+- **API:-**
+- API to be run in localhost as size of model is large
 ##  ✨ Task2 <br>
 
 - **Dataset Information:-** <br>
