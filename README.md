@@ -41,7 +41,7 @@ In this project, we have done three tasks related to ICC Cricket World Cup 2023.
   To predict first innings match score.
 
 - **Models:-** <br>
-  Xgboost Regressor-> R2-score- 95.8%
+  Xgboost Regressor-> R2-score- 95.8% <br>
   Random Forest -> R2-score - 70.8%
 
 ##  ✨ Task2 <br>
@@ -77,15 +77,16 @@ In this project, we have done three tasks related to ICC Cricket World Cup 2023.
 - **Models** <br>
   Random Forest Classifier -> R2-score - 66.7%
 
-## External Dependencies or libraries
-
+## External Dependencies or libraries:- 
+ Tensorflow,Sci-kit learn,keras,streamlit,pandas,numpy
 
 ## Contributions
-- **Natvar** Did'nt do anything
-- **Vandan** - 
-- **Shekhar** 
-- **Shashank**
-- **Dhairya** In Task1 predicted 
+- **Dhairya:-** In Task1_2 predicted first innings match score and created ball by ball ODI match dataset. <br>
+- **Natvar:-** Task1_1 predicted runs_scored for each batsman and implemented DNN(Deep Neural Network). <br>
+- **Shekhar:-** web scraped and created dataset for each tasks. <br>
+- **Shashank:-** implemented random forest classifier and top 5 bowlers for each team. <br>
+- **Vandan:-** Predicted top 6 batsman for each team and maintenance of code quality. <br>
+
 
 
 
