@@ -91,6 +91,15 @@ with col6:
 with col7:
     avg_mins = st.number_input('Average_minutes',min_value=0.000,step=0.001)
 
+col8,col9,col10 = st.columns(3)
+
+with col5:
+    year = st.number_input('year',min_value=2018,step=1)
+with col6:
+    month = st.number_input('month',min_value=1,step=1)
+with col7:
+    day = st.number_input('day',min_value=1,step=1)
+
 
 if st.button('Predict Score'):
     df = pd.DataFrame({f'player_{name}': [0] for name in player})
@@ -109,16 +118,9 @@ if st.button('Predict Score'):
     df['avg_bf']=avg_bf
     df['avg_sr']=avg_sr
     df['avg_mins']=avg_mins
-    # df = pd.DataFrame(
-    #  {'player': [player], 'opposition': [opposition],'ground':[ground],'avg_4s': [avg_4s],'avg_6s':[avg_6s],'avg_bf':[avg_bf],'avg_sr':[avg_sr],'avg_mins':[avg_mins]})
-    # print(df)
-    # df_encoded = pd.get_dummies(df['player'], columns=player, prefix='player')
-    # df = pd.concat([df, df_encoded], axis=1)
-    # df_encoded = pd.get_dummies(df['opposition'], columns=opposition, prefix='opposition')
-    # df = pd.concat([df, df_encoded], axis=1)
-    # df_encoded = pd.get_dummies(df['ground'], columns=ground, prefix='ground')
-    # df = pd.concat([df, df_encoded], axis=1)
-    # df=df.drop(['player','opposition','ground'])
+    df['year']=year
+    df['month']=month
+    df['day']=day
     result = pipe.predict(df)
     st.header("Predicted Runs - " + str(int(result[0])))
 
