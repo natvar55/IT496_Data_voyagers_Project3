@@ -74,9 +74,13 @@ with col7:
 if st.button('Predict Score'):
     df = pd.DataFrame(
      {'player': [player], 'opposition': [opposition],'ground':[ground],'avg_4s': [avg_4s],'avg_6s':[avg_6s],'avg_bf':[avg_bf],'avg_sr':[avg_sr],'avg_mins':[avg_mins]})
+    print(df)
     df_encoded = pd.get_dummies(df['player'], columns=player, prefix='player')
+    df = pd.concat([df, df_encoded], axis=1)
     df_encoded = pd.get_dummies(df['opposition'], columns=opposition, prefix='opposition')
+    df = pd.concat([df, df_encoded], axis=1)
     df_encoded = pd.get_dummies(df['ground'], columns=ground, prefix='ground')
+    df = pd.concat([df, df_encoded], axis=1)
     df=df.drop(['player','opposition','ground'])
     result = pipe.predict(df)
     st.header("Predicted Runs - " + str(int(result[0])))
