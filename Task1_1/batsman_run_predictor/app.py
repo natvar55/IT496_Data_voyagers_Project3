@@ -101,7 +101,7 @@ if st.button('Predict Score'):
     str1 = f'player_{Player}'
     df[str1]=1
     str1 = f'opposition_{Opposition}'
-    st.header(str1)
+    df[str1]=1
     str1 = f'ground_{Ground}'
     df[str1]=1
     df['avg_4s']=avg_4s
