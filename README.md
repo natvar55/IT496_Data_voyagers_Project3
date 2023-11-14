@@ -1,6 +1,6 @@
 # IT496_Data_voyagers_Project3
 
-# 🚀 Data Voyagers
+## 🚀 Data Voyagers
 
 
 ## 🎯 Introduction
