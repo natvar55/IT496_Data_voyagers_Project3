@@ -84,8 +84,8 @@ In this project, we have done three tasks related to ICC Cricket World Cup 2023.
 - **Dhairya:-** In Task1_2 predicted first innings match score and created ball by ball ODI match dataset. <br>
 - **Natvar:-** Task1_1 predicted runs_scored for each batsman and helped in making dataset for task1_1. <br>
 - **Shekhar:-** web scraped and created dataset for each tasks. <br>
-- **Shashank:-** implemented random forest classifier and top 5 bowlers for each team. <br>
-- **Vandan:-** Predicted top 6 batsman for each team and maintenance of code quality. <br>
+- **Shashank:-** implemented random forest classifier and top 5 bowlers for each team and  predicted finalists and winner of world cup. <br>
+- **Vandan:-** Predicted top 6 batsman for each team and maintenance of code quality and predicted finalists and winner of world cup. <br>
 
 
 
