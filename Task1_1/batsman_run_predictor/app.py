@@ -95,7 +95,9 @@ with col7:
 if st.button('Predict Score'):
     df = pd.DataFrame({f'player_{name}': [0] for name in player})
     df1 = pd.DataFrame({f'opposition_{name}': [0] for name in opposition})
+    df = pd.concat([df, df1], axis=1)
     df1 = pd.DataFrame({f'ground_{name}': [0] for name in ground})
+    df = pd.concat([df, df1], axis=1)
     str1 = f'player_{player}'
     df[str1]=1
     str1 = f'opposition_{opposition}'
