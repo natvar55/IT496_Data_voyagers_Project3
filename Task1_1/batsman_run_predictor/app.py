@@ -110,6 +110,6 @@ if st.button('Predict Score'):
     df['avg_sr']=avg_sr
     df['avg_mins']=avg_mins
     result = pipe.predict(df)
-    st.header("Predicted Runs - " + str(int(result[0])))
+    st.header("Predicted Runs " + str(int(result[0])))
 
 
